@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Management UI</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <!-- Sidebar -->
+        <div class="sidebar">
+            <div class="sidebar-item">
+                <h3>Expired Tasks</h3>
+                <p>5</p>
+            </div>
+            <div class="sidebar-item">
+                <h3>All Active Tasks</h3>
+                <p>7</p>
+            </div>
+            <div class="sidebar-item">
+                <h3>Completed Tasks</h3>
+                <p>2/7</p>
+            </div>
+            <button class="add-task-btn">+ Add Task</button>
+        </div>
+
+        <!-- Main Content -->
+        <div class="main-content">
+            <div class="header">
+                <input type="text" class="search-input" placeholder="Search Project">
+                <button class="filter-btn">Filter</button>
+            </div>
+
+            <div class="tasks-board">
+                <!-- To Do Column -->
+                <div class="tasks-column">
+                    <h3 class="column-title">To Do</h3>
+                    <div class="task-card">
+                        <div class="task-priority low"></div>
+                        <div class="task-content">
+                            <h4>Brainstorming</h4>
+                            <p>Brainstorming brings team members' diverse experience into play.</p>
+                            <p class="deadline">Deadline: 12/5/24</p>
+                        </div>
+                    </div>
+                    <div class="task-card">
+                        <div class="task-priority high"></div>
+                        <div class="task-content">
+                            <h4>Research</h4>
+                            <p>User research helps you to create an optimal product for users.</p>
+                            <p class="deadline">Deadline: 12/5/24</p>
+                        </div>
+                    </div>
+                    <div class="task-card">
+                        <div class="task-priority high"></div>
+                        <div class="task-content">
+                            <h4>Wireframes</h4>
+                            <p>Low fidelity wireframes include the most basic content and visuals.</p>
+                            <p class="deadline">Deadline: 12/5/24</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- On Progress Column -->
+                <div class="tasks-column">
+                    <h3 class="column-title">On Progress</h3>
+                    <div class="task-card">
+                        <div class="task-priority low"></div>
+                        <div class="task-content">
+                            <h4>Onboarding Illustrations</h4>
+                            <p>Deadline: 12/5/24</p>
+                        </div>
+                    </div>
+                    <div class="task-card">
+                        <div class="task-priority low"></div>
+                        <div class="task-content">
+                            <h4>Moodboard</h4>
+                            <p>Deadline: 12/5/24</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Done Column -->
+                <div class="tasks-column">
+                    <h3 class="column-title">Done</h3>
+                    <div class="task-card">
+                        <div class="task-priority completed"></div>
+                        <div class="task-content">
+                            <h4>Mobile App Design</h4>
+                            <p>Deadline: 12/5/24</p>
+                        </div>
+                    </div>
+                    <div class="task-card">
+                        <div class="task-priority completed"></div>
+                        <div class="task-content">
+                            <h4>Design System</h4>
+                            <p>It just needs to adapt the UI from what you did before.</p>
+                            <p class="deadline">Deadline: 12/5/24</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Right Sidebar -->
+        <div class="right-sidebar">
+            <div class="add-task">
+                <h3>ADD TASK</h3>
+                <textarea placeholder="Task details..."></textarea>
+                <p>Deadline</p>
+                <input type="date">
+                <p>Assigned to</p>
+                <input type="text">
+                <button class="assign-btn">Assign</button>
+            </div>
+            <div class="calendar">
+                <h3>Calendar</h3>
+                <input type="month">
+            </div>
+            <div class="task-success">
+                <h3>Add Task Success</h3>
+                <p>New task has been created successfully.</p>
+                <button class="back-btn">Back</button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
